@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap");
 
+/* General Styles */
+
 *,
 *:after,
 *:before {
@@ -9,7 +11,7 @@
 }
 
 body {
-  padding: 2rem;
+  /* padding: 2rem; */
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.8;
   height: 100vh;
@@ -19,14 +21,31 @@ body {
 }
 
 .main-container {
+  padding: 2rem 0;
   height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  /* filter: brightness(50%); */
 }
 
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.content-container h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+/* Nav Bar - All pages */
 nav {
-  padding: 2rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -38,6 +57,10 @@ nav {
 #logo {
   text-decoration: none;
   color: inherit;
+}
+
+#logo:hover {
+  color: #ddd;
 }
 
 nav h1 {
@@ -68,11 +91,11 @@ nav h1 {
   color: #878787;
 }
 .instagram-link {
-  margin-top: 2rem;
+  margin-top: 3rem;
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  color: #878787;
+  color: #333;
   display: flex;
   align-items: center;
 }
@@ -80,7 +103,7 @@ nav h1 {
 .fa-instagram {
   font-size: 2rem;
   margin-right: 0.5rem;
-  color: #878787;
+  color: #333;
   cursor: pointer;
   line-height: inherit;
 }
@@ -89,6 +112,8 @@ nav h1 {
 .instagram-link:hover .fa-instagram {
   color: #333;
 }
+
+/* Index Page */
 
 .hero-container {
   /* border: 1px solid #878787; */
@@ -136,8 +161,139 @@ nav h1 {
   height: 800px;
 }
 
+/* Creations Page */
+/* About page */
+
+.information-container {
+  height: 100%;
+  max-width: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.information {
+  /* height: 80%; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.information-left {
+  margin-right: 4rem;
+}
+
+.information-left img {
+  max-width: 500px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.information-right {
+  font-weight: 100;
+  max-width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  /* height: 50%; */
+}
+
+.information-right p {
+  margin-top: 1.5rem;
+  text-align: justify;
+}
+/* Contact Page */
+.contact-form-container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  max-width: 80%;
+  height: 100%;
+  /* background-color: #f4f4f4; */
+  color: #333;
+}
+
+.form-content {
+  width: 25%;
+  /* margin-right: 4rem; */
+}
+
+.form-content h2 {
+  text-align: left;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 1rem;
+  font-weight: 300;
+}
+.contact-form input {
+  margin-top: 0.2rem;
+  width: 100%;
+  padding: 0.6rem 0.5rem;
+  border-radius: 2px;
+  border: 1px solid #878787;
+}
+
+.contact-form textarea {
+  padding: 0.5rem 0.5rem;
+  height: 8rem;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #878787;
+}
+
+.contact-form button {
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #333;
+  width: 100%;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #878787;
+}
+
+.form-information {
+  width: 30%;
+}
+
+.form-information p {
+  font-weight: 100;
+  text-align: justify;
+}
+
+/* Footer */
 footer {
   font-size: 0.6rem;
   padding: 0 1rem;
   color: #878787;
+}
+
+footer p {
+  color: #333;
 }

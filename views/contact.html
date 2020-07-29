@@ -4,26 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+      integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+      crossorigin="anonymous"
+      defer
+    ></script>
     <title>Sam Foo Pottery</title>
   </head>
-  <body class="main-container">
-    <nav>
-      <a id="logo" href="./index.html"><h1>Sam Foo Pottery</h1></a>
-      <ul class="nav-links">
-        <li><a href="./creations.html">creations</a></li>
-        <li><a href="./about.html">about</a></li>
-        <li><a href="./contact.html">contact</a></li>
+  <body>
+    <div class="content-container">
+      <nav>
+        <a id="logo" href="./index.html"><h1>Sam Foo Pottery</h1></a>
+        <ul class="nav-links">
+          <li><a href="./creations.html">creations</a></li>
+          <li><a href="./about.html">about</a></li>
+          <li><a href="./contact.html">contact</a></li>
 
-        <li><a href="./shop.html">Shop</a></li>
-      </ul>
-      <i class="fab fa-instagram"></i>
-    </nav>
-    <div class="information-container">
-      <div class="information">
-        <h2>CONTACT PAGE</h2>
+          <li><a href="#">shop</a></li>
+        </ul>
+        <a
+          class="instagram-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/samfoopottery/"
+          ><i class="fab fa-instagram"></i>Instagram</a
+        >
+      </nav>
+
+      <div class="contact-form-container">
+        <div class="form-content">
+          <h2>Contact Me</h2>
+          <form
+            class="contact-form"
+            action="https://formspree.io/moqkygob"
+            method="POST"
+          >
+            <label>
+              Your email:
+            </label>
+            <input type="text" name="_replyto" />
+            <label>
+              Your name:
+            </label>
+            <input type="text" name="name" />
+            <label>
+              Your message:
+            </label>
+            <textarea name="message"></textarea>
+
+            <!-- your other form fields go here -->
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div class="form-information">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            magnam quam quibusdam ad alias ipsum ipsa totam eum consequuntur
+            esse. Ut debitis fugiat magnam maiores consequatur repellat, facere
+            minus amet sunt iste voluptatem dolorum labore, necessitatibus
+            voluptatibus maxime quas ipsum nisi cumque exercitationem impedit
+            quae, dolorem quia deserunt nobis. Corrupti.
+          </p>
+        </div>
       </div>
     </div>
-
-    <script src="main.js"></script>
   </body>
 </html>
